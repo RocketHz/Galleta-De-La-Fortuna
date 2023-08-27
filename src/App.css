@@ -1,0 +1,66 @@
+.container {
+  min-height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.container_title {
+  text-shadow: 0.15em 0.15em #9999;
+  font-size: 2rem;
+}
+
+.container_phrase {
+  width: 100%;
+  max-width: 30em;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1em 2em;
+  line-height: 1.5;
+  border-radius: 0.7em;
+}
+
+.container_btn {
+  padding: 0.8em 1.2em;
+  border-radius: 0.7em;
+  font-size: 1.2rem;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 150ms ease, transform 100ms ease, box-shadow 200ms ease;
+}
+
+.container_btn:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 0 0.8em #0005;
+}
+
+.jello-diagonal {
+  animation: jello-diagonal 0.1s linear both;
+}
+@keyframes jello-diagonal {
+  0% {
+    transform: skew(0deg 0deg);
+  }
+  30% {
+    transform: skew(25deg 25deg);
+  }
+  40% {
+    transform: skew(-15deg, -15deg);
+  }
+  50% {
+    transform: skew(15deg, 15deg);
+  }
+  65% {
+    transform: skew(-5deg, -5deg);
+  }
+  75% {
+    transform: skew(5deg, 5deg);
+  }
+  100% {
+    transform: skew(0deg 0deg);
+  }
+}
